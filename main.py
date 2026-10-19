@@ -1,4 +1,4 @@
-
+import pandas as pd
 entries = []
 def add_entry():
     title = input("Enter title: ").strip()
@@ -31,7 +31,6 @@ def add_entry():
 
     entries.append(entry)
     print("Entry added successfully!")
-
 
 def view_entries():
     if not entries:
