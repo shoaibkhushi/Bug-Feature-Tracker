@@ -12,19 +12,16 @@ def add_entry():
     if entry_type not in ["Bug", "Feature"]:
         print("Invalid type. Choose Bug or Feature.")
         return
-
+    
     priority = input("Priority (Low/Medium/High): ").strip().title()
 
     if priority not in ["Low", "Medium", "High"]:
         print("Invalid priority.")
         return
-
     status = input("Status (Open/Resolved): ").strip().title()
-
     if status not in ["Open", "Resolved"]:
         print("Invalid status.")
         return
-
     entry = {
         "title": title,
         "type": entry_type,
